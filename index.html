@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+  <meta charset="utf-8">
+  <title>Boids - Accelerate By GPU</title>
+  <meta name="viewport" content="width=device-width">
+  <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:100|Open+Sans:300' rel='stylesheet' type='text/css'>
+  <style type="text/css">
+    html,
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+      color: #543D5E;
+      color: rgba(84, 61, 94, 0.75);
+      background-color: #FFFFFF;
+    }
+
+    #title {
+      color: #543D5E;
+      font-size: 2.5em;
+      color: rgba(84, 61, 94, 0.9);
+      font-family: 'Roboto Slab', 'Times New Roman', Times, serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    a {
+      color: rgba(84, 61, 94, 0.9);
+      text-decoration: none;
+      border-bottom: 1px dotted #543D5E;
+    }
+
+    #text {
+      position: absolute;
+      max-width: 300px;
+      top: 16px;
+      left: 16px;
+    }
+
+    .info-text {
+      color: #003D5E;
+      font-weight: bolder;
+    }
+
+    .source {
+      margin-bottom: 0.5em;
+      font-size: 14px;
+    }
+  </style>
+</head>
+
+<body>
+  <article role="main" id="text">
+    <h1 id="title">Boids - Accelerate By GPU</h1>
+    <div id="description">
+      <p>
+        Right now you're watching
+        <strong data-count class="info-text">many</strong> boids being simulated at
+        <strong data-fps class="info-text">60</strong> frames per second.
+      </p>
+      <button class="tg-btn" type="button">To Parallel</button>
+
+      <br>
+      <br> Boids Amount:
+      <br>
+      <input class="input-feild" type="text" name="boids">
+      <button class="sub-btn" type="button">Enter</button>
+
+
+    </div>
+  </article>
+  <script type="text/javascript" src="bundle.js"></script>
+</body>
+
+</html>
